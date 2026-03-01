@@ -4,6 +4,8 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #121212;
+    color: #e0e0e0;
 }
 
 .center-container {
@@ -11,6 +13,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #1e1e1e;
 }
 
 #counter-btn {
@@ -18,12 +21,30 @@ html {
     padding: 1rem 2rem;
     border: none;
     border-radius: 8px;
-    background: #0078d4;
+    background: #4285f4;
     color: #fff;
     cursor: pointer;
     transition: background 0.2s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 #counter-btn:hover {
-    background: #005fa3;
+    background: #3367d6;
+}
+
+@media (prefers-color-scheme: dark) {
+    body,
+    html {
+        background-color: #121212;
+        color: #e0e0e0;
+    }
+    .center-container {
+        background-color: #1e1e1e;
+    }
+    #counter-btn {
+        background: #4285f4;
+    }
+    #counter-btn:hover {
+        background: #3367d6;
+    }
 }
